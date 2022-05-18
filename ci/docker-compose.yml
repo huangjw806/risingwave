@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  rw-build-env:
+    image: public.ecr.aws/x5u3w5h6/rw-build-env:latest
+#    build:
+#      context: ..
+#      dockerfile: ./ci/Dockerfile-demo
+#      target: risingwave-build-env
+    volumes:
+      - ..:/risingwave
+#  risingwave-release:
+#    image: risingwave-release:latest
+#    build:
+#      context: ..
+#      dockerfile: ./ci/Dockerfile
+#      target: risingwave-release
+#    container_name: risingwave-release
+
